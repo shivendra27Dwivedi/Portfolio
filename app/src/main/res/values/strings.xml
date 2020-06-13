@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+
+    <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="job_name">Android developer &amp; Programmer</string>
+    <string name="lorem_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="shivendra_ndwivedi">Shivendra Dwivedi</string>
+    <string name="name">Shivendra\nDwivedi</string>
+    <string name="current_job_post">Current Job Post</string>
+    <string name="B.Tech">Information Techknowlogy B.Tech</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
