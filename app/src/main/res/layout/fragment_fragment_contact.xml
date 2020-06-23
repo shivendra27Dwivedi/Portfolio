@@ -1,44 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".home.fragmentContact">
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:orientation="vertical">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/profile"
-        app:civ_border_color="@color/background_light">
-    </de.hdodenhof.circleimageview.CircleImageView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="3dp"
+        android:background="@color/back_ground">
 
-       <ImageView
-           android:layout_width="24dp"
-           android:layout_height="24dp"
-           android:layout_marginLeft="32dp"
-           android:layout_marginTop="42dp"
-           android:padding="0dp"
-           android:src="@drawable/instagram">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back_ground">
 
-       </ImageView>
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width ="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shivendra Dwivedi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="190dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
 
-       <ImageView
-           android:layout_width="24dp"
-           android:layout_height="24dp"
-           android:layout_marginLeft="32dp"
-           android:layout_marginTop="5dp"
-           android:padding="0dp"
-           android:src="@drawable/twitter">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/profile">
 
-       </ImageView>
-   </LinearLayout>
+            </de.hdodenhof.circleimageview.CircleImageView>
 
-</layout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:elevation="5dp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="256dp"
+        android:layout_marginTop="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/nav_selected_color">
+
+            <TextView
+                android:id="@+id/textName1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="italic"
+                android:text="Android Developer"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_baseline_email_24"/>
+
+            <TextView
+                android:id="@+id/emailId"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:text="shivendradwivedi27@gmail.com"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+          <LinearLayout
+              android:layout_marginTop="45dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="36dp"
+                  android:layout_height="36dp"
+                  android:src="@drawable/ic_baseline_phone_android_24"
+                  android:contentDescription="TODO" />
+              <TextView
+                  android:id="@+id/textNumber"
+                  android:layout_gravity="center_horizontal"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="20dp"
+                  android:clickable="true"
+                  android:textStyle="bold"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="9115046930"/>
+          </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
